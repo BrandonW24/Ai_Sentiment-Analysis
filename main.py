@@ -1,7 +1,7 @@
 import sys
 import re
 from math import log
-from spellchecker import SpellChecker
+#from spellchecker import SpellChecker
 from collections import defaultdict
 
 squash = lambda l: [item for sublist in l for item in sublist]
@@ -78,11 +78,11 @@ def preprocess(input_filename, outfilename):
     # Process input file
     input_file = open(input_filename, 'r')
     unprocessed_doc = input_file.read().splitlines()
-    spell = SpellChecker()
-    incorrect_words = []
-    misspelledWords = spell.unknown(["soooo", "soooooo", "WAAAAAAyyyyyyyyyy", "wayyy", "shawarrrrma", "shawarma"])
-    for word in misspelledWords:
-        incorrect_words = (spell.correction(word))
+    #spell = SpellChecker()
+    #incorrect_words = []
+    #misspelledWords = spell.unknown(["soooo", "soooooo", "WAAAAAAyyyyyyyyyy", "wayyy", "shawarrrrma", "shawarma"])
+    #for word in misspelledWords:
+    #    incorrect_words = (spell.correction(word))
     vocab = {retrieve_word(word) for file in unprocessed_doc for word in file.split()[:-1]}
     vocab.discard('')
     input_file.close()
