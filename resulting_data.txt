@@ -1,0 +1,88 @@
+spelling error detected : Honeslty
+spelling error detected : wayyy
+spelling error detected : Burrittos
+spelling error detected : bloddy
+spelling error detected : Veggitarian 
+spelling error detected : soooo
+spelling error detected : soooooo
+spelling error detected : over-whelm
+spelling error detected : satifying
+spelling error detected : WAAAAAAyyyyyyyyyy
+spelling error detected : disapppointment
+spelling error detected : Honeslty
+spelling error detected : wayyy
+spelling error detected : Burrittos
+spelling error detected : bloddy
+spelling error detected : Veggitarian 
+spelling error detected : soooo
+spelling error detected : soooooo
+spelling error detected : over-whelm
+spelling error detected : satifying
+spelling error detected : WAAAAAAyyyyyyyyyy
+spelling error detected : disapppointment
+spelling error detected : Honeslty
+spelling error detected : wayyy
+spelling error detected : Burrittos
+spelling error detected : bloddy
+spelling error detected : Veggitarian 
+spelling error detected : soooo
+spelling error detected : soooooo
+spelling error detected : over-whelm
+spelling error detected : satifying
+spelling error detected : WAAAAAAyyyyyyyyyy
+spelling error detected : disapppointment
+spelling error detected : Honeslty
+spelling error detected : wayyy
+spelling error detected : Burrittos
+spelling error detected : bloddy
+spelling error detected : Veggitarian 
+spelling error detected : soooo
+spelling error detected : soooooo
+spelling error detected : over-whelm
+spelling error detected : satifying
+spelling error detected : WAAAAAAyyyyyyyyyy
+spelling error detected : disapppointment
+_____________________________________________________
+Testing on **TRAINING** data
+Results from training data : 
+_____________________________________________________
+Accuracy rating :
+Correct   :    483
+Incorrect :    16
+Accuracy  :    0.9679358717434869
+_____________________________________________________
+
+_____________________________________________________
+spelling error detected : Honeslty
+spelling error detected : wayyy
+spelling error detected : Burrittos
+spelling error detected : bloddy
+spelling error detected : Veggitarian 
+spelling error detected : soooo
+spelling error detected : soooooo
+spelling error detected : over-whelm
+spelling error detected : satifying
+spelling error detected : WAAAAAAyyyyyyyyyy
+spelling error detected : disapppointment
+spelling error detected : Honeslty
+spelling error detected : wayyy
+spelling error detected : Burrittos
+spelling error detected : bloddy
+spelling error detected : Veggitarian 
+spelling error detected : soooo
+spelling error detected : soooooo
+spelling error detected : over-whelm
+spelling error detected : satifying
+spelling error detected : WAAAAAAyyyyyyyyyy
+spelling error detected : disapppointment
+spelling error detected : soooo
+spelling error detected : soooo
+Results from **TEST** data : 
+_____________________________________________________
+Accuracy rating :
+Correct   :    398
+Incorrect :    99
+Accuracy  :    0.8008048289738431
+_____________________________________________________
+
+_____________________________________________________
