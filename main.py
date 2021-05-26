@@ -74,7 +74,7 @@ def retrieve_word(word):
     return re.compile(r'[\W_]+').sub('', word.lower())
 
 #Processing begins the moment the input file comes in.
-def preprocess(input_filename, outfilename):
+def preprocess(input_filename, output_filename):
     # Process input file
     input_file = open(input_filename, 'r')
     unprocessed_doc = input_file.read().splitlines()
@@ -85,7 +85,16 @@ def preprocess(input_filename, outfilename):
     #    incorrect_words = (spell.correction(word))
     vocab = {retrieve_word(word) for file in unprocessed_doc for word in file.split()[:-1]}
     vocab.discard('')
+
+    #This outputs the pre processed training and testing data into two different files called :
+    #preprocessed_train.txt and preprocessed_test.txt in the format the program description defines.
+    output_file = open(output_filename, 'w')
+    output_file.write(','.join(sorted(list(vocab))) + '\n' + '\n'.join([(','.join(['1' if word in file[0] else '0' for word in vocab]) + 
+    ',' + str(file[1])) for file in [([retrieve_word(word) for word in file.split()][:-1], int(file.split()[-1])) for file in unprocessed_doc]]))
+    
     input_file.close()
+    output_file.close()
+
     #This returns our overall vocab index and our processed file. We utilize the retrieve_word function for every word in the file
     #for each file that has not yet been processed which is stored in the unprocessed_doc variable.
     return vocab, [([retrieve_word(word) for word in file.split()][:-1], int(file.split()[-1])) for file in unprocessed_doc]
@@ -106,6 +115,9 @@ def trainNB(vocab, files):
 
     return log_p, log_L_LH
 
+#Classification step begins here when this testNB function is invoked.
+#it reads the training data with its labels and learns the parameters that
+#which is being used by the classifier, it then retrieves the maximum
 def testNB(file, log_p, log_L_LH, vocab):
     probability = {}
     for c in [0,1]:
@@ -160,7 +172,7 @@ if __name__ == '__main__':
     #to the testing set.
     vocab, training_set = preprocess('trainingSet.txt', 'preprocessed_train.txt')
     _, test_set = preprocess('testSet.txt', 'preprocessed_test.txt')
-
+    print("_____________________________________________________")
     results = []
     print("Results from **TEST** data : ")
     for testing_data in test_set:
