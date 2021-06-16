@@ -1,7 +1,5 @@
-# assignment3 - Sentiment Analysis with Naive Bayes
+# assignment 3 - Sentiment Analysis with Naive Bayes
 - Brandon Withington
-- CS331
-- Dr. Rebecca Hutchinson
 - 25 May 2021
 
 ## Running the code
